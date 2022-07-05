@@ -1,0 +1,135 @@
+html,
+body,
+button {
+  font-family: sans-serif;
+}
+
+.calc {
+  max-width: 15rem;
+  background: #666;
+  color: white;
+  display: grid;
+  grid-template-areas:
+    "display display display display"
+    "btn-c btn-mr btn-mp btn-div"
+    "btn-7 btn-8 btn-9 btn-mul"
+    "btn-4 btn-5 btn-6 btn-sub"
+    "btn-1 btn-2 btn-3 btn-add"
+    "btn-0 btn-0 btn-dec btn-eql";
+  justify-items: stretch;
+  align-items: stretch;
+  grid-gap: 1px;
+}
+
+.display {
+  padding: 1rem;
+  text-align: right;
+  font-size: 2rem;
+  font-weight: lighter;
+  grid-area: display;
+}
+
+.calc button {
+  width: 100%;
+  font-size: 1.25rem;
+  padding: 1rem;
+  border: none;
+  color: white;
+  background: #999;
+}
+
+.calc button:active {
+  background: #777;
+}
+
+.calc button.dark {
+  background: #777;
+}
+
+.calc button.dark:active {
+  background: #999;
+}
+
+.calc button.contrast {
+  background: orange;
+}
+
+.calc button.contrast:active {
+  background: #c58721;
+}
+
+.btn-0 {
+  grid-area: btn-0;
+}
+
+.btn-1 {
+  grid-area: btn-1;
+}
+
+.btn-2 {
+  grid-area: btn-2;
+}
+
+.btn-3 {
+  grid-area: btn-3;
+}
+
+.btn-4 {
+  grid-area: btn-4;
+}
+
+.btn-5 {
+  grid-area: btn-5;
+}
+
+.btn-6 {
+  grid-area: btn-6;
+}
+
+.btn-7 {
+  grid-area: btn-7;
+}
+
+.btn-8 {
+  grid-area: btn-8;
+}
+
+.btn-9 {
+  grid-area: btn-9;
+}
+
+.btn-dec {
+  grid-area: btn-dec;
+}
+
+.btn-c {
+  grid-area: btn-c;
+}
+
+.btn-mr {
+  grid-area: btn-mr;
+}
+
+.btn-mp {
+  grid-area: btn-mp;
+}
+
+.btn-div {
+  grid-area: btn-div;
+}
+
+.btn-mul {
+  grid-area: btn-mul;
+}
+
+.btn-sub {
+  grid-area: btn-sub;
+}
+
+.btn-add {
+  grid-area: btn-add;
+}
+
+.btn-eql {
+  grid-area: btn-eql;
+}
